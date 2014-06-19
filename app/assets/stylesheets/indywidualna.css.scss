@@ -1,0 +1,87 @@
+// Place all the styles related to the indywidualna controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+hr {
+  border          : solid 1px;
+  color           : #909090;
+}
+
+#indywidualna_menu {
+  text-align      : left;
+  
+  a {
+    color         : #A8A8A8;
+  }
+}
+
+#gallery {
+  width           : 950px;
+  height          : 280px;
+  background-color: #000000;
+  overflow        : hidden;
+
+  img {
+    display       : block;
+    padding       : 0px;
+    width         : 180px;
+    margin        : 0px;
+    border        : 5px solid #000000;
+    float         : left
+  }
+}
+
+@mixin gallery_div {
+  margin          : 0px;
+  padding         : 0px;
+  border          : none;
+  height          : 280px;
+  width           : 190px;
+  float           : left;
+  background-color: #000000;
+  //overflow        : hidden; 
+}
+
+div.gallery_img_single {
+  @include gallery_div;
+  //background-color: blue; 
+}
+
+div.gallery_img_double {
+  @include gallery_div;
+  //background-color: red; 
+}
+
+div.gallery_img_triple {
+  @include gallery_div;
+  //background-color: green; 
+}
+
+hr.subline {
+  width             : 300px;
+  margin            : 13px 0px 6px 0px;
+}
+
+#left_pane {  
+  margin            : 0px;
+  padding           : 10px;
+  width             : 300px;
+  float             : left;  
+
+  p {
+    margin          : 0px;
+    text-align      : left;
+    text-indent     : 25px;
+    font-size       : large;
+  }
+}
+
+#right_pane {
+  margin            : 0px;
+  padding           : 10px;
+  overflow          : hidden;
+
+  img {
+    width           : 610px;
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Alegreya&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+  <title>Sylwia Brataniec::Fotografia Reklamowa i Produktowa</title>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>  
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="container">
+  <div id="header">
+    <div id="logo">
+      <h1>
+        <span class="h1">S</span>YLWIA <span class="h1">B</span>RATANIEC
+      </h1>
+      <!--<h1>Sylwia Brataniec</h1>-->
+      <h2>
+          <span class="h2">F</span>OTOGRAFIA 
+          <span class="h2">R</span>EKLAMOWA I 
+          <span class="h2">P</span>RODUKTOWA
+      <h2>
+    </div>
+    <div id="navigation_small">
+      
+    </div>
+    <div id="contact">
+      <span>KONTAKT: sylwia.brataniec@gmail.com<span>
+      <span>TEL: 507 979 041</soan>
+    </div>
+  </div>
+  <div id="main_menu"> 
+    <nav>
+      <ul>
+        <li><%= link_to 'FOTOGRAFIA<br />PRODUKTOWA'.html_safe, controller: "produktowa" %></li>
+        <li><%= link_to 'FOTOGRAFIA<br />REKLAMOWA'.html_safe, controller: "reklamowa" %></li>
+        <li><%= link_to 'FOTOGRAFIA<br />INDYWIDUALNA'.html_safe, controller: "indywidualna" %></li>
+        <li><%= link_to 'OFERTA<br />CENNIK'.html_safe, controller: "oferta" %></li>
+        <li><%= link_to 'PRZYKŁADOWE<br />REALIZACJE'.html_safe, controller: "realizacje" %></li>
+      </ul>
+    </nav>
+  </div>
+  <div id="main">
+    <%= yield %>
+  </div>
+  <div id="footer">
+    <div id="navigation_footer">
+      <p>
+        <%= link_to 'STRONA GŁÓWNA', root_url %> | 
+        <%= link_to 'LOGOWANIE', controller: 
+        "container" %> |
+        <%= link_to 'WEBMAJSTERZY', "dupa.pl" %>
+      </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

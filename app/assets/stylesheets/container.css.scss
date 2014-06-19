@@ -1,0 +1,178 @@
+// Place all the styles related to the container controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// fonts that does not work with polish characters
+// 'Simonetta', 'Gilda Display'
+
+$font-stack         : 'Alegreya', Helvetica, sans-serif;
+$primary-color      : #000000;
+
+@mixin mar_pad_0 {
+  margin            : 0px;
+  padding           : 0px;
+}
+
+body {
+  font-family       : $font-stack;
+  font-size         : medium;
+  color             : $primary-color;
+}
+
+a:link {
+  color           : #000033;
+  text-decoration : none;
+  font-size       : large;
+  font-family       : $font-stack;
+}
+a:visited {
+  color           : #000033;
+  text-decoration : none;
+}
+a:hover {
+  color           : #000033;
+  text-decoration : none;
+}
+a:active {
+  color           : #000033;
+  text-decoration : none;
+}
+
+#container {
+  //background-color  : #606060;
+  width             : 950px;
+  padding           : 0px;
+  margin            : 0px auto;
+}
+
+#header {
+  @include mar_pad_0;
+  //background-color  : #989898;
+  height            : 100px;
+  overflow          : hidden;
+}
+
+#logo {
+  height            : 100px;
+  margin            : 0px;
+  padding           : 10px;
+  width             : 500px;
+  float             : left;
+
+  h1 {
+    font-size       : 35px;    
+    margin          : 0px 5px;
+  }
+
+  span.h1 {
+    font-size       : 40px;    
+    margin          : 0px;
+  }
+
+  h2 {
+    font-size       : 15px;
+    margin          : 0px 5px;
+  }
+
+  span.h2 {
+    font-size       : 17px;    
+    margin          : 0px;
+  }
+}
+
+#navigation_small {
+  margin            : 0px;
+  padding           : 5px;
+  height            : 20px;  
+  width             : 300px;
+  overflow          : hidden;
+}
+
+#contact {
+  @include mar_pad_0;
+  height            : 90px;  
+  width             : 400px;
+  overflow          : hidden;
+
+  span {
+    padding         : 5px;
+    font-size       : small;
+  }
+}
+
+#main_menu {
+  @include mar_pad_0;
+  //background-color  : #B0B0B0;
+  height            : 52px;
+}
+
+nav {
+  ul {
+    @include mar_pad_0;
+    list-style        : none;
+  }
+
+  li { 
+    display           : inline-block; 
+    height            : 50px;
+  }
+
+  li:hover { background: #E8E8E8; }
+
+  a {
+    display           : block;
+    padding           : 0px 30px 9px 30px;
+    height            : 14px;
+    text-decoration   : none;
+  }
+}
+
+#main {
+  @include mar_pad_0; 
+  //background-color  : #D8D8D8;
+  text-align          : center;
+
+  img {
+    height              : auto;
+    width               : 800px;
+    //border              : solid 1px;    
+  }
+}
+
+#footer {
+  @include mar_pad_0; 
+  clear             : both;
+  //background-color  : #C8C8C8;
+}
+
+#navigation_footer {
+  margin            : 0px;
+  padding           : 5px;
+  height            : 11px;
+  overflow          : hidden;
+
+  p {
+    @include mar_pad_0;  
+    font-weight     : bold;
+    font-size       : xx-small; 
+    text-align      : center;
+  }
+
+  a:link {
+    color           : #000033;
+    font-weight     : bold;
+    font-size       : xx-small;
+  }
+  a:hover {
+    color           : #000033;
+    text-decoration : underline;
+  }
+  a:visited {
+    color           : #000033;
+    text-decoration : none;
+  }
+  a:active {
+    color           : #000033;
+    text-decoration : underline;
+  }
+}
